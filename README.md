@@ -34,12 +34,6 @@ custom frontend instead of using [`solidus_frontend`](https://github.com/solidus
 [![License](http://img.shields.io/badge/license-BSD-yellowgreen.svg)](LICENSE.md)
 [![Slack](http://slack.solidus.io/badge.svg)](http://slack.solidus.io)
 
-Demo
-----
-Try out Solidus with one-click on Heroku:
-
-[![Deploy](https://www.herokucdn.com/deploy/button.png)](https://heroku.com/deploy?template=https://github.com/solidusio/solidus)
-
 Getting started
 ---------------
 

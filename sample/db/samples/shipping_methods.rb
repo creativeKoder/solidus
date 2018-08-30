@@ -14,7 +14,7 @@ shipping_category = Spree::ShippingCategory.find_or_create_by!(name: 'Default')
 
 Spree::ShippingMethod.create!([
   {
-    name: "UPS Ground (USD)",
+    name: "Local Delivery (NYC)",
     zones: [north_america],
     calculator: Spree::Calculator::Shipping::FlatRate.create!,
     tax_category: tax_category,
@@ -29,6 +29,13 @@ Spree::ShippingMethod.create!([
   },
   {
     name: "UPS One Day (USD)",
+    zones: [north_america],
+    calculator: Spree::Calculator::Shipping::FlatRate.create!,
+    tax_category: tax_category,
+    shipping_categories: [shipping_category]
+  },
+  {
+    name: "UPS Ground (USD)",
     zones: [north_america],
     calculator: Spree::Calculator::Shipping::FlatRate.create!,
     tax_category: tax_category,
@@ -51,6 +58,7 @@ Spree::ShippingMethod.create!([
 ])
 
 {
+  "Local Delivery (NYC)" => [10, "USD"],
   "UPS Ground (USD)" => [5, "USD"],
   "UPS Ground (EU)" => [5, "USD"],
   "UPS One Day (USD)" => [15, "USD"],
