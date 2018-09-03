@@ -1,15 +1,15 @@
-$cerulean:                       hsl(216, 57, 47);
+$cerulean:                       rgb(164, 201, 97);
 
-$white:                          hsl(220, 0, 100);
-$gray-light:                     hsl(220, 9, 71);
-$gray:                           hsl(220, 8, 23);
-$gray-dark:                      hsl(220, 12, 18);
-$black:                          hsl(220, 19, 13);
+$white:                          rgb(243, 243, 243);
+$gray-light:                     rgb(176, 187, 174);
+$gray:                           rgb(53, 63, 57);
+$gray-dark:                      rgb(40, 51, 41);
+$black:                          rgb(19, 24, 20);
 
 $color-primary:                  $cerulean;
 
 $color-sidebar-bg:              $gray;
-$color-sidebar-border:          very-light(#5498DA, 12); // $color-border
+$color-sidebar-border:          very-light(rgb(144, 218, 84), 12); // $color-border
 $color-navbar:                  $gray-light;
 $color-navbar-bg:               $gray;
 $color-navbar-active:           $white;
