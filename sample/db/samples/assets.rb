@@ -85,7 +85,7 @@ images = {
 }
 
 products[:ror_baseball_jersey].variants.each do |variant|
-  color = variant.option_value("tshirt-color").downcase
+  color = variant.option_value("tshirt-color").try(:downcase) 
   main_image = image("ror_baseball_jersey_#{color}", "png")
   File.open(main_image) do |f|
     variant.images.create!(attachment: f)
